@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Global Tags */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000;
+}
+
+span {
+    font-size: .9rem;
+    color: #757373;
+}
+
+h6 {
+    font-size:  1.1rem;
+    color: #000;
+}
+
+/* Navigation */
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.header .logo {
+    width: 60px;
+    cursor: pointer;
+}
+
+.header .navigation .navbar-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header .navigation .navbar-list .navbar-items {
+    list-style: none;
+    margin-left: 25px;
+}
+
+.header .navigation .navbar-list .navbar-items a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.header .navigation .navbar-list .navbar-items a:hover {
+    color: #ff9933;
+}
+
+/* Home */
+.home {
+    background-image: linear-gradient(rgb(255, 153, 51, 0.6), rgba(244, 196, 48, 0.3)), url("Images/img1.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;    
+}
+
+.home h2 {
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.home p {
+    width: 50%;
+    color: #000;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.home .home-button {
+    margin-top: 30px;
+}
+
+.home a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+.home .btn-saffron {
+    color: #ff9933;
+    background-color: #fff;
+    margin: 5px;
+}
+
+.home .btn-saffron:hover {
+    color: #000;
+    background-color: #ff9933;
+    transition: 0.3s ease;
+}
+
+/* Activities */
+.activities {
+    padding: 5vw 8vw 5vw 8vw;
+    text-align: center;
+}
+
+.activities p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.activities .act-box {
+    background-color: #ffb44e;
+    text-align: center;
+    margin: 0 20px;
+    border-radius: 10px;
+}
+
+.activities .act {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+}
+
+.activities .act-box i {
+    font-size: 2.3rem;
+    color: #000;
+    padding: 13px 0 7px 0;
+}
+
+.activities .act-box h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #000;
+    padding: 13px 0 7px 0;
+}
+
+.activities .act-box p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+}
