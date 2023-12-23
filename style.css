@@ -63,6 +63,22 @@ h6 {
     cursor: pointer;
 }
 
+.header .navigation {
+    display: flex;
+}
+
+#menu-btn {
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+#menu-close {
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
 .header .navigation .navbar-list {
     display: flex;
     justify-content: flex-end;
@@ -268,7 +284,8 @@ h6 {
     background-image: linear-gradient(rgba(244, 196, 48, 0.8), rgb(255, 153, 51, 0.8));
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
     flex-wrap: wrap;
 }
 
@@ -338,10 +355,10 @@ h6 {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
-    text-align: center;
     align-items: center;
+    text-align: center;
     width: 100%;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .footer .copyright a {
@@ -374,6 +391,7 @@ h6 {
 
 /* Responsive for multiple devices */
 @media (max-width: 769px) {
+    /* Header */
     .header {
         padding: 15px 20px;
     }
@@ -381,4 +399,78 @@ h6 {
     .header .logo {
         width: 50px;
     }
+
+    #menu-btn {
+        display: initial;
+        font-size: 1.6rem;
+    }
+    
+    #menu-close {
+        display: initial;
+        font-size: 1.6rem;
+        color: #000;
+        padding: 20px;
+    }
+
+    .header .navigation .navbar-list {
+        position: absolute;
+        top: 0;
+        right: -220px;
+        width: 220px;
+        background-color: #f8a95a88;
+        backdrop-filter: blur(4.5px);
+        border: 1px solid #b96919;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start; 
+        border-radius: 10px 0 0 10px;
+        transition: 0.6s ease;
+    }
+
+    .header .navigation .navbar-list.active {
+        right: 0;
+    }
+
+    .header .navigation .navbar-list .navbar-items {
+        padding: 20px 0 20px 40px;
+        margin-left: 0;
+    }
+
+    .header .navigation .navbar-list .navbar-items a {
+        color: #000;
+    }
+
+    .header .navigation .navbar-list .navbar-items a:hover {
+        color: #fff;
+    }
+
+    /* Home */
+    .home {
+        padding-top: 0px;
+    }
+
+    .home p {
+        width: 90%;
+    }
+
+    /* Activities */
+    .activities {
+        padding: 8vw 4vw 8vw 4vw;
+        text-align: center;
+    }
+
+    /* Blogs */
+    .blogs {
+        padding: 8vw 4vw 8vw 4vw;
+    }
+
+    /* Teams */
+    .team {
+        padding: 8vw 4vw 8vw 4vw;
+    }
+}
+
+@media (max-width: 475px) {
+    
 }
